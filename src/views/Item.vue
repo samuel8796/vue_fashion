@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="item">
     <div class="jumbotron">
       <div class="container">
         <div class="input-group">
@@ -11,7 +11,7 @@
             aria-describedby="button-addon4"
           />
           <div id="app" class="input-group-append">
-            <b-form-group class="input-group-append ">
+            <b-form-group class="input-group-append">
               <b-form-checkbox-group
                 v-model="group"
                 :options="options"
@@ -23,9 +23,8 @@
           </div>
         </div>
         <br />
-        <div id="search">
-          <button href="" class="btn">單品推薦</button>
-          <button href="" class="btn">風格推薦</button>
+        <div id="searchit">
+          <button href="" class="btn">Search for new Style</button>
         </div>
       </div>
     </div>
@@ -33,25 +32,25 @@
 </template>
 
 <style>
-#home .btn-outline-secondary {
+#item .btn-outline-secondary {
   color: #6c757d;
   border-color: #ced4db;
   background-color: white;
 }
 
-#home .jumbotron {
+#item .jumbotron {
   background-color: rgb(255, 255, 255);
   height: 60vh;
 }
 
-#search button {
+#searchit button {
   background: rgb(192, 174, 142);
   padding: 10px;
   margin: 8px;
   border-radius: 8px;
 }
 
-#home .container {
+#item .container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
